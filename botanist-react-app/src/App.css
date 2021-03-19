@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+.Card {
+  width: 20vmin;
+  height: calc(20vmin * 1.2);
+  font-size: 35px;
+  min-width: 150px;
+  min-height: calc(150px * 1.2);
+  background-color: rgba(128, 255, 0, 0.726);
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: right;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 10px;
+}

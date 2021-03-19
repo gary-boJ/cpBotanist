@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  botanist-react-app:
+    container_name: botanist-react-app
+    build:
+      context: ./botanist-react-app
+      dockerfile: Dockerfile
+    volumes:
+      - './botanist-react-app:/app' # mount the app code in the container at /app
+      - '/app/node_modules' # use the container's version of node_modules
+    ports:
+      - 3030:3030
+    environment:
+      - CHOKIDAR_USEPOLLING=true # needed for hot-reloading 
